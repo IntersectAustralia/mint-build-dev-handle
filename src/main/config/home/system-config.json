@@ -106,7 +106,7 @@
     "curation": {
         "curationEmailAddress": "${admin.email}",
         "curationRequiresConfirmation": false,
-        "pidProperty": "localPid"
+        "pidProperty": "handle"
     },
     "indexer": {
         "type": "solr",
@@ -133,9 +133,14 @@
         "ingest-relations": {
             "id": "ingest-relations"
         },
-        "local": {
-            "id": "local",
-            "useIncrements": false
+        "handle": {
+            "id": "handle",
+            "namingAuthority": "10880",
+            "privateKeyPath": "${fascinator.home}/handle/admpriv.bin",
+            "passPhrase": "password",
+            "useIncrements": true,
+            "incrementingFile": "${fascinator.home}/handle/index.txt",
+            "publishedDomain": "hdl.handle.net"
         },
         "jsonVelocity": {
             "id" : "jsonVelocity",
