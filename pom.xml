@@ -49,7 +49,7 @@
         <!-- Mint Curation Plugin -->
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
-            <artifactId>plugin-transformer-local</artifactId>
+            <artifactId>plugin-transformer-handle</artifactId>
             <version>${mint.version}</version>
         </dependency>
     </dependencies>
