@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.googlecode.redbox-mint</groupId>
     <artifactId>mint-handle-curation-demo</artifactId>
-    <version>1.5.1-SNAPSHOT</version>
+    <version>1.5.1</version>
     <packaging>pom</packaging>
     <name>The Mint - Handle Curation Demo</name>
     <parent>
         <groupId>com.googlecode.redbox-mint</groupId>
         <artifactId>mint</artifactId>
-        <version>1.5.1-SNAPSHOT</version>
+        <version>1.5.1</version>
     </parent>
     <properties>
         <!-- Used in build -->
@@ -41,34 +41,34 @@
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>mint-project</artifactId>
             <type>pom</type>
-            <version>${mint.version}</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>mint</artifactId>
             <type>pom</type>
-            <version>${mint.version}</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>mint-config</artifactId>
-            <version>${mint.version}</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>plugin-transaction-curation-mint</artifactId>
-            <version>${mint.version}</version>
+            <version>1.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>sruclient-mint</artifactId>
-            <version>${mint.version}</version>
+            <version>1.5.1</version>
         </dependency>
         <!-- Mint Curation Plugin -->
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>plugin-transformer-handle</artifactId>
-            <version>${mint.version}</version>
+            <version>1.5.1</version>
         </dependency>
         
         <dependency>
@@ -293,9 +293,9 @@
         </plugins>
     </build>
     <scm>
-        <url>https://redbox-mint.googlecode.com/svn/mint/builds/dev-handle/trunk</url>
-        <connection>scm:svn:http://redbox-mint.googlecode.com/svn/mint/builds/dev-handle/trunk</connection>
-        <developerConnection>scm:svn:https://redbox-mint.googlecode.com/svn/mint/builds/dev-handle/trunk</developerConnection>
+        <url>https://redbox-mint.googlecode.com/svn/mint/builds/dev-handle/tags/mint-handle-curation-demo-1.5.1</url>
+        <connection>scm:svn:http://redbox-mint.googlecode.com/svn/mint/builds/dev-handle/tags/mint-handle-curation-demo-1.5.1</connection>
+        <developerConnection>scm:svn:https://redbox-mint.googlecode.com/svn/mint/builds/dev-handle/tags/mint-handle-curation-demo-1.5.1</developerConnection>
     </scm>
     <repositories>
         <repository>
