@@ -9,11 +9,11 @@
     <parent>
         <groupId>com.googlecode.redbox-mint</groupId>
         <artifactId>mint</artifactId>
-        <version>1.5.1</version>
+        <version>1.5.2-SNAPSHOT</version>
     </parent>
     <properties>
         <!-- Used in build -->
-        <mint.version>1.5.1-SNAPSHOT</mint.version>
+        <mint.version>1.5.2-SNAPSHOT</mint.version>
 
         <!-- Runtime values, will replace placeholders
              in config and control scripts -->
@@ -41,41 +41,34 @@
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>mint-project</artifactId>
             <type>pom</type>
-            <version>1.5.1</version>
+            <version>${mint.version}</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>mint</artifactId>
             <type>pom</type>
-            <version>1.5.1</version>
+            <version>${mint.version}</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>mint-config</artifactId>
-            <version>1.5.1</version>
+            <version>${mint.version}</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>plugin-transaction-curation-mint</artifactId>
-            <version>1.5.1</version>
+            <version>${mint.version}</version>
         </dependency>
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>sruclient-mint</artifactId>
-            <version>1.5.1</version>
+            <version>${mint.version}</version>
         </dependency>
         <!-- Mint Curation Plugin -->
         <dependency>
             <groupId>com.googlecode.redbox-mint</groupId>
             <artifactId>plugin-transformer-handle</artifactId>
-            <version>1.5.1</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.googlecode.the-fascinator</groupId>
-            <artifactId>fascinator-portal</artifactId>
-            <type>warpath</type>
-            <version>1.1.1</version>
+            <version>${mint.version}</version>
         </dependency>
     </dependencies>
     <profiles>
