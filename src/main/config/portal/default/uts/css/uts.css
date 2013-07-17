@@ -1,0 +1,122 @@
+body {
+    font-size: 75%;
+}
+
+h1#branding, .branding {
+    background:none repeat scroll 0 0 #b3b3b3;
+    padding-bottom:0;
+}
+
+.subtitle {
+    font-size:larger;
+    padding-bottom:0.5em;
+    padding-left:0.85em;
+}
+
+.menu .selected,.menu .selected:hover {
+    background: #00749b;
+}
+
+.facet-list .portal-facet {
+    background: #00749b;
+    font-style: italic;
+}
+
+.box {
+    background: #FFFFFF;
+}
+
+.box h2 {
+    background: #00749b;
+}
+
+.grid_4 .box h2 a {
+    background-position:97% 50%;
+}
+
+.box h2 a {
+    background-image:url("../images/icons/switch_plus.gif");
+}
+
+.box h2 a:hover {
+    background-color: #555555;
+}
+
+.box h2 a, .box h2 a.visible {
+    /*background:url("../images/icons/switch_minus.gif") no-repeat scroll 97% 50% #5E7553;*/
+    background-color:#00749b;
+    border:medium none;
+    color:#FFFFFF;
+    display:block;
+    margin:-6px -12px;
+    padding:6px 12px;
+}
+
+fieldset {
+    background: #e9e9e9;
+}
+
+thead th {
+    background: #00000;
+}
+
+tbody th,tbody td {
+    background: #E0ECF0;
+}
+/*
+body {
+    background: #B7DAA0;
+}
+
+.container_16 {
+    background: #E2FFCD;
+}
+*/
+
+ul.main li ul li.selected-view a, ul.main li:hover ul li a:hover {
+    background-color: #00749b;
+}
+
+.pId {
+    margin: 3px 0px;
+    padding: 4px;
+    border: 1px solid black;
+    background: #FFFFCC;
+    font-size: 120%;
+}
+.handle-report .row-count {
+    margin: 3px 0px;
+    padding: 4px;
+    border: 1px solid black;
+    background: #FFFFCC;
+    font-size: 120%;
+}
+.handle-report th {
+    background-color: #00749b;
+    color: #FFFFFF;
+}
+.handle-report .row-count a {
+    background:url("../images/icons/table_save.png");
+    background-position: 0 0.5em;
+    background-repeat: no-repeat;
+    margin-right: 1em;
+    padding: 0.5em 0.5em 0.5em 20px;
+}
+
+.ticked {
+    background-image: url(../images/icons/tick.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-right: 20px;
+}
+
+.waiting {
+    background-image: url(../images/icons/hourglass.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-right: 20px;
+}
+
+a#fascinator-blog-link {
+  display:none;
+}

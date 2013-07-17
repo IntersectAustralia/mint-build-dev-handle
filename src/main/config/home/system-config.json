@@ -173,7 +173,7 @@
         "defaultView": "default",
         "skins": {
             "default": "default",
-            "order": [ "local", "mint" ]
+            "order": [ "uts", "local", "mint" ]
         },
         "caching": {
             "caches": {
