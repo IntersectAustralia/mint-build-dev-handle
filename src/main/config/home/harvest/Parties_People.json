@@ -2,9 +2,9 @@
     "harvester": {
         "type": "csv",
         "csv": {
-            "fileLocation": "${fascinator.home}/data/People_Sample.csv",
+            "fileLocation": "${fascinator.home}/data/People.csv",
             "idColumn": "ID",
-            "recordIDPrefix": "redbox-mint.googlecode.com/parties/people/",
+            "recordIDPrefix": "au.edu.uts/parties/people/",
             "headerRow": true,
             "delimiter": ",",
             "ignoredFields": [],
@@ -13,7 +13,7 @@
     },
 
     "transformer": {
-        "curation": ["handle"],
+        "curation": ["local"],
         "metadata": ["ingest-relations", "jsonVelocity"]
     },
     "curation": {
@@ -43,22 +43,8 @@
                 }
             }
         },
-        "handle": {
-            "source": "metadata.json",
-            "description": {
-                "seperator": " ",
-                "paths": [
-                    ["data", "Honorific"],
-                    ["data", "Given_Name"],
-                    ["data", "Family_Name"]
-                ]
-            },
-            "output": {
-                "path": ["metadata"],
-                "field": "rdf:resource"
-            },
-            "template": "[[INC]]",
-            "urlTemplate": "${server.url.base}published/detail/[[OID]]"
+        "local": {
+            "template": "${server.url.base}published/detail/[[OID]]"
         },
         "jsonVelocity": {
             "templatesPath" : "${fascinator.home}/templates/people",
