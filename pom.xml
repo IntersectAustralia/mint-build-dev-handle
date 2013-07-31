@@ -28,7 +28,7 @@
     <dir.solr>${project.home}/solr</dir.solr>
     <dir.storage>${project.home}/storage</dir.storage>
     <dir.geonames>${dir.home}/geonames/solr</dir.geonames>
-    <server.url.base>http://${mintServer.hostname}:${server.port}/mint/</server.url.base>
+    <server.url.base>${mintServer.url.base}</server.url.base>
 	<smtp.host>mailfilter.itd.uts.edu.au</smtp.host>
 	<admin.email>redbox.admin@uts.edu.au</admin.email>
     <!-- Control scripts try to auto-detect proxy. Use this value if you
@@ -111,7 +111,8 @@
         <packaging>jar</packaging>
         <project.home>../</project.home>
 		<mintServer.hostname>localhost</mintServer.hostname>
-      </properties>
+		<mintServer.url.base>http://${mintServer.hostname}:${server.port}/mint/</mintServer.url.base>
+	  </properties>
     </profile>
 
 	<!-- DEV-Default profile -->
@@ -126,6 +127,7 @@
 	  </activation>
 	  <properties>
 		  <mintServer.hostname>localhost</mintServer.hostname>
+		  <mintServer.url.base>http://${mintServer.hostname}:${server.port}/mint/</mintServer.url.base>
 	  </properties>
 	</profile>
 
@@ -140,6 +142,7 @@
 	  </activation>
 	  <properties>
 		  <mintServer.hostname>ic2-redbox-vm.intersect.org.au</mintServer.hostname>
+		  <mintServer.url.base>http://${mintServer.hostname}:${server.port}/mint/</mintServer.url.base>
 	  </properties>
 	</profile>
 
@@ -154,6 +157,7 @@
 	  </activation>
 	  <properties>
 		  <mintServer.hostname>ic2-ms22-staging1-vm.intersect.org.au</mintServer.hostname>
+		  <mintServer.url.base>http://${mintServer.hostname}/mint/</mintServer.url.base>
 	  </properties>
 	</profile>
 
