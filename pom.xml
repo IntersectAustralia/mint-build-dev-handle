@@ -172,6 +172,7 @@
 		  </activation>
 		  <properties>
 			  <mintServer.hostname>test-mint.research.uts.edu.au</mintServer.hostname>
+			  <mintServer.url.base>http://${mintServer.hostname}/mint/</mintServer.url.base>
 		  </properties>
 	  </profile>
 
@@ -186,6 +187,7 @@
 		  </activation>
 		  <properties>
 			  <mintServer.hostname>mint.research.uts.edu.au</mintServer.hostname>
+			  <mintServer.url.base>http://${mintServer.hostname}/mint/</mintServer.url.base>
 		  </properties>
 	  </profile>
 
