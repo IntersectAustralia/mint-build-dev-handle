@@ -13,7 +13,7 @@
     },
 
     "transformer": {
-        "curation": ["local"],
+        "curation": ["handle"],
         "metadata": ["ingest-relations", "jsonVelocity"]
     },
     "curation": {

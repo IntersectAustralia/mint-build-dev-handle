@@ -13,7 +13,7 @@
     },
 
     "transformer": {
-        "curation": ["local"],
+        "curation": ["handle"],
         "metadata": ["ingest-relations", "jsonVelocity"]
     },
     "curation": {
@@ -43,9 +43,23 @@
                 }
             }
         },
-        "local": {
-            "template": "${server.url.base}published/detail/[[OID]]"
-        },
+		"handle": {
+			"source": "metadata.json",
+			"description": {
+				"seperator": " ",
+				"paths": [
+					["data", "Honorific"],
+					["data", "Given_Name"],
+					["data", "Family_Name"]
+				]
+			},
+			"output": {
+				"path": ["metadata"],
+				"field": "rdf:resource"
+			},
+			"template": "[[INC]]",
+			"urlTemplate": "${server.url.base}published/detail/[[OID]]"
+		},
         "jsonVelocity": {
             "templatesPath" : "${fascinator.home}/templates/people",
             "portalId": "Parties_People"

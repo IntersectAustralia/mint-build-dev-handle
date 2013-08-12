@@ -145,12 +145,17 @@
         }
     },
     "transformerDefaults": {
-        "ingest-relations": {
-            "id": "ingest-relations"
-        },
-		"local": {
-			"id": "local",
-			"useIncrements": false
+		"ingest-relations": {
+			"id": "ingest-relations"
+		},
+		"handle": {
+			"id": "handle",
+			"namingAuthority": "11057.DEV/ADMIN",
+			"privateKeyPath": "${fascinator.home}/handle/admpriv.bin",
+			"passPhrase": "password",
+			"useIncrements": true,
+			"incrementingFile": "${fascinator.home}/handle/index.txt",
+			"publishedDomain": "hdl.handle.net"
 		},
         "jsonVelocity": {
             "id" : "jsonVelocity",

@@ -142,7 +142,7 @@
 	  </activation>
 	  <properties>
 		  <mintServer.hostname>ic2-redbox-vm.intersect.org.au</mintServer.hostname>
-		  <mintServer.url.base>http://${mintServer.hostname}:${server.port}/mint/</mintServer.url.base>
+		  <mintServer.url.base>http://${mintServer.hostname}/mint/</mintServer.url.base>
 	  </properties>
 	</profile>
 
