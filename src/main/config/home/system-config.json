@@ -150,10 +150,10 @@
 		},
 		"handle": {
 			"id": "handle",
-			"namingAuthority": "11057.DEV/ADMIN",
+			"namingAuthority": "11057",
 			"privateKeyPath": "${fascinator.home}/handle/admpriv.bin",
-			"passPhrase": "password",
-			"useIncrements": true,
+			"passPhrase": "none",
+			"useIncrements": false,
 			"incrementingFile": "${fascinator.home}/handle/index.txt",
 			"publishedDomain": "hdl.handle.net"
 		},

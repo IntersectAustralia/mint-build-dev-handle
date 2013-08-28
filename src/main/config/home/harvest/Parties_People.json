@@ -57,7 +57,7 @@
 				"path": ["metadata"],
 				"field": "rdf:resource"
 			},
-			"template": "[[INC]]",
+			"template": "[[OID]]",
 			"urlTemplate": "${server.url.base}published/detail/[[OID]]"
 		},
         "jsonVelocity": {
